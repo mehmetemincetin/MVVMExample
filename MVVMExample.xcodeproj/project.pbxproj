@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5008EE5C2E276B4800AD8F1F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5008EE4D2E276B4800AD8F1F /* .gitignore */; };
 		5008EE5F2E276B4800AD8F1F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5008EE572E276B4800AD8F1F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5008EE4C2E276B4800AD8F1F /* MVVMExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MVVMExample.app; path = "/Users/mehmetemincetin/Desktop/Work/Swift/MVVMExample/build/Debug-iphoneos/MVVMExample.app"; sourceTree = "<absolute>"; };
+		5008EE4D2E276B4800AD8F1F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5008EE572E276B4800AD8F1F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +54,7 @@
 			children = (
 				50D131302E26D69800E612B1 /* MVVMExample */,
 				5008EE572E276B4800AD8F1F /* README.md */,
+				5008EE4D2E276B4800AD8F1F /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +122,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5008EE5C2E276B4800AD8F1F /* .gitignore in Resources */,
 				5008EE5F2E276B4800AD8F1F /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
