@@ -15,5 +15,5 @@ build/*
 xcuserdata
 *.xccheckout
 
-Learning.swift
+MVVMExample/Learning.swift
 
