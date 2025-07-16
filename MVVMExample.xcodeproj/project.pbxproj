@@ -12,16 +12,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5008EE4C2E276B4800AD8F1F /* MVVMExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MVVMExample.app; path = "/Users/mehmetemincetin/Desktop/Work/Swift/MVVMExample/build/Debug-iphoneos/MVVMExample.app"; sourceTree = "<absolute>"; };
 		5008EE4D2E276B4800AD8F1F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5008EE572E276B4800AD8F1F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		507F2B782E2774A500054EF3 /* MVVMExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MVVMExample.app; path = "/Users/mehmetemincetin/Desktop/Work/Swift/MVVMExample/build/Debug-iphoneos/MVVMExample.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		50D131402E26D69900E612B1 /* Exceptions for "MVVMExample" folder in "MVVMExample" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Other/Info.plist,
 			);
 			target = 50D1312D2E26D69700E612B1 /* MVVMExample */;
 		};
@@ -80,7 +80,7 @@
 			packageProductDependencies = (
 			);
 			productName = MVVMExample;
-			productReference = 5008EE4C2E276B4800AD8F1F /* MVVMExample.app */;
+			productReference = 507F2B782E2774A500054EF3 /* MVVMExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
