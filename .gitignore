@@ -13,5 +13,5 @@ Config/User*.xcconfig
 xcuserdata
 *.xccheckout
 
-MVVMExample/Learning.swift
+Learning.swift
 
