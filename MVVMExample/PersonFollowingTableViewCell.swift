@@ -12,10 +12,12 @@
 
 import UIKit
 
+
+/// AnyObject kullanmak sadece sınıf türlerine conform etmek anlamına gelir. Ayrıca Weak referansını da kullanmamıza izin verir
+///
 protocol PersonFollowingTableViewCellDelegate: AnyObject {
     
     func personFollowingTableViewCell(_ cell: PersonFollowingTableViewCell, didTapWith viewModel: PersonFollowingTableViewCellViewModel)
-    
 }
 
 class PersonFollowingTableViewCell: UITableViewCell {
