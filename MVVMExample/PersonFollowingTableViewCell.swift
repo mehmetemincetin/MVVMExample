@@ -13,8 +13,7 @@
 import UIKit
 
 
-/// AnyObject kullanmak sadece sınıf türlerine conform etmek anlamına gelir. Ayrıca Weak referansını da kullanmamıza izin verir
-///
+/// AnyObject kullanmak sadece sınıf türlerine conform etmek anlamına gelir. Ayrıca Weak referansını da kullanmamıza izin verir.
 protocol PersonFollowingTableViewCellDelegate: AnyObject {
     
     func personFollowingTableViewCell(_ cell: PersonFollowingTableViewCell, didTapWith viewModel: PersonFollowingTableViewCellViewModel)
@@ -58,6 +57,8 @@ class PersonFollowingTableViewCell: UITableViewCell {
         contentView.addSubview(userImageView)
         contentView.addSubview(button)
         contentView.clipsToBounds = true
+        
+        // "#" ifadesi derleme zamanına özel ifade anlamına gelir, derleyici bunun önündeki ifadeye derleme anında kontroller yapar, var mı yok mu doğru yazılmış mı objc kullanılmış mı diye.
         button.addTarget(self, action: #selector(didTapButton), for:  .touchUpInside)
     }
     
@@ -65,7 +66,7 @@ class PersonFollowingTableViewCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError()
     }
-    
+    // objc ifadesi Swiftte kodunun Objective-C sistemlerine, API'lerine ve runtime mekanizmalarına erişmesini mümkün kılar.
     @objc private func didTapButton() {
         guard let viewModel = viewModel else {
             return
@@ -93,10 +94,27 @@ class PersonFollowingTableViewCell: UITableViewCell {
             button.setTitleColor(.blue, for: .normal)
             button.layer.borderWidth = 1
             button.layer.borderColor = UIColor.black.cgColor
+            button.layer.cornerRadius = 8
+            
+            button.layer.shadowColor = UIColor.black.cgColor
+            button.layer.shadowOffset = CGSize(width: 0, height: 2)
+            button.layer.shadowRadius = 10
+            button.layer.shadowOpacity = 0.3
+            button.layer.masksToBounds = false
         } else {
             button.setTitle("Follow", for: .normal)
             button.setTitleColor(.white, for: .normal)
             button.backgroundColor = .link
+            button.layer.cornerRadius = 8
+            
+            button.layer.shadowColor = UIColor.black.cgColor
+            button.layer.shadowOffset = CGSize(width: 0, height: 2)
+            button.layer.shadowRadius = 10
+            button.layer.shadowOpacity = 0.3
+            button.layer.masksToBounds = false
+            
+            
+
         }
         
     }
